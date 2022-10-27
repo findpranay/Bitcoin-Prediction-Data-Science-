@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bitcoin Prediction</title>
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form method="POST" class="form">
+	<h2>Day</h2>
+    <input class="area"  type="text" id="day" class="floatLabel" name="day" >
+	
+	<h2>Month</h2>
+    <input class="area"  type="text" id="month" class="floatLabel" name="month" >
+	
+	<h2>Year</h2>
+    <input class="area"  type="text" id="year" class="floatLabel" name="year">
+
+</div>
+
+</form>
+<form class="form">
+	
+	<div>
+		
+	</div>
+	<button class="submit"  onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+
+</body>
+</html>
