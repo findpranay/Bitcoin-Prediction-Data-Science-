@@ -1,9 +1,9 @@
 
 function onClickedEstimatePrice() {
   console.log("Estimate price button clicked");
-  var day = document.getElementById("day");
-  var month =  document.getElementsById("month");
-  var year =  document.getElementsById("year");
+  var day = document.getElementById("day").value;
+  var month =  document.getElementById("month").value;
+  var year =  document.getElementById("year").value;
   var estPrice = document.getElementById("uiEstimatedPrice");
   var url = "http://127.0.0.1:5000/predict_bitcoin"; //Use this if you are NOT using nginx which is first 7 tutorials
   //var url = "/api/predict_bitcoin"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
